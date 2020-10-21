@@ -19,3 +19,40 @@ git push
 
 
 ==> now refresh the github to review the uploaded files 
+
+HOW TO GIT PUSH ALL:
+
+After you save your PyBer.ipynb file to your computer, add it to the PyBer_Analysis GitHub repository.
+
+Launch the command line or Git Bash.
+Navigate to your PyBer_Analysis folder.
+Check the status by using git status.
+Add all the file(s) by using git add ..
+Commit the files to be added to the repository and add a Git message by using git commit -m "message".
+Add the file to your repository by using git push.
+Refresh your GitHub page to see the changes to your repository. 
+
+
+multiple boxplot
+
+df.info()
+> <class 'pandas.core.frame.DataFrame'>
+> RangeIndex: 746 entries, 0 to 745
+> Data columns (total 3 columns):
+> Test_1    746 non-null float64
+> Test_2    746 non-null float64
+> Type      746 non-null int64
+> dtypes: float64(2), int64(1)
+> memory usage: 17.6 KB
+
+df.head()
+>        Test_1     Test_2  Type
+> 0   85.868553  88.160763     2
+> 1   88.017580  89.946783     3
+> 2   76.811083  82.444485     3
+> 3  100.000000  68.406203     3
+> 4   94.719547  63.994755     2
+
+df.boxplot(column=["Test_1", "Test_2"])  # Plot specific columns
+
+df.boxplot(by="Type", column=["Test_1", "Test_2"])
