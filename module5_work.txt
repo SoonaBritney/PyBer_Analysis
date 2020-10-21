@@ -1,0 +1,21 @@
+#error bar
+stdev=pyber_ride_df["Avg. Fare($USD)"].std
+pyber_ride_df.plot.bar(x="Month", y="Avg. Fare ($USD)", yerr=stdev, color="lightblue")
+
+#Rotate the labels on the x-axis to horizontal
+plt.xticks(rotation=0)
+$set the y-axis increment to every $5
+plt.yticks(np.arrange(0, 51, step5.0 ))
+plt.show()
+
+GIT BASH file upload to GitHub
+
+CD C:/Users/2018b/OneDrive/Documents/GitHub/PyBer_Analysis
+
+git status
+git add PyBer.ipynb Resources/
+git commit -m "Adding PyBer.ipynb file and Resources folder."
+git push
+
+
+==> now refresh the github to review the uploaded files 
