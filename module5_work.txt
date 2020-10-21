@@ -13,7 +13,7 @@ GIT BASH file upload to GitHub
 CD C:/Users/2018b/OneDrive/Documents/GitHub/PyBer_Analysis
 
 git status
-git add PyBer.ipynb Resources/
+git add .
 git commit -m "Adding PyBer.ipynb file and Resources folder."
 git push
 
